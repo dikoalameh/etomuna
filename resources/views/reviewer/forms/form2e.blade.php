@@ -16,7 +16,7 @@
                         <div class="max-sm:mb-2">2025-S1-001</div>
 
                         <div class="font-bold">Study Protocol Title:</div>
-                        <div class="max-sm:mb-2">ERB-2025-001</div>
+                        <div class="max-sm:mb-2">Brain Injury: Prevention and Treatment of Chronic Brain Injury</div>
 
                         <div class="font-bold">Principal Investigator (PI):</div>
                         <div class="max-sm:mb-2">John Doe</div>

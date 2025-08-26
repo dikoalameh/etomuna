@@ -70,7 +70,7 @@
                     </a>
 
                     <!-- FORM 2(J) -->
-                    <a href="">
+                    <a href="{{ url('student/forms/form2j') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 2(J)</h2>
@@ -80,7 +80,7 @@
                     </a>
 
                     <!-- FORM 3(A) -->
-                    <a href="">
+                    <a href="{{ url('student/forms/form3a') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 3(A)</h2>
@@ -90,7 +90,7 @@
                     </a>
 
                     <!-- FORM 3(B) -->
-                    <a href="">
+                    <a href="{{ url('student/forms/form3b') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 3(B)</h2>
@@ -100,7 +100,7 @@
                     </a>
 
                     <!-- FORM 3(D) -->
-                    <a href="">
+                    <a href="{{ url('student/forms/form3d') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 3(D)</h2>
@@ -120,7 +120,7 @@
                     </a>
 
                     <!-- FORM 3(C) -->
-                    <a href="">
+                    <a href=" {{ url('student/forms/form3c') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 3(C)</h2>
@@ -130,7 +130,7 @@
                     </a>
 
                     <!-- FORM 3(L) -->
-                    <a href="">
+                    <a href=" {{ url('student/forms/form3l') }}">
                         <div class="card bg-lightgray p-4 rounded-lg flex justify-between items-center">
                             <div class="block items-center flex-wrap gap-[10px]">
                                 <h2 class="text-xl max-md:text-[18px] font-semibold">FORM 3(L)</h2>

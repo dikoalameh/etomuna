@@ -40,6 +40,38 @@
         </main>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkboxes = document.querySelectorAll('.check');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    const group = this.dataset.group;
+
+                    if (this.checked) {
+                        // Uncheck all other checkboxes in the same group
+                        checkboxes.forEach(cb => {
+                            if (cb !== this && cb.dataset.group === group) {
+                                cb.checked = false;
+                                // Disable textboxes
+                                const siblingTextbox = cb.closest('label').querySelector('#textBox');
+                                if (siblingTextbox) siblingTextbox.disabled = true;
+                            }
+                        });
+                    }
+
+                    // Enable/disable textbox
+                    const thisTextbox = this.closest('label').querySelector('#textBox');
+                    if (thisTextbox) thisTextbox.disabled = !this.checked;
+                });
+            });
+
+            // Initialize all textboxes on page load
+            checkboxes.forEach(cb => {
+                const textbox = cb.closest('label').querySelector('#textBox');
+                if (textbox) textbox.disabled = !cb.checked;
+            });
+        });
+        
         dropDownMenu();
 
         function toggleSidebar() {
@@ -99,7 +131,17 @@
                 "/student/download-forms": "DOWNLOAD FORMS",
                 "/student/submit-tickets": "SUBMIT TICKETS",
                 "/student/submit-form-layout": "SUBMIT FORMS",
-                "/student/settings": "SETTINGS"
+                "/student/settings": "SETTINGS",
+                "/student/forms/form2a": "FORM 2(A)",
+                "/student/forms/form2b": "FORM 2(B)",
+                "/student/forms/form2c": "FORM 2(C)",
+                "/student/forms/form2d": "FORM 2(D)",
+                "/student/forms/form3a": "FORM 3(A)",
+                "/student/forms/form3b": "FORM 3(B)",
+                "/student/forms/form3c": "FORM 3(C)",
+                "/student/forms/form3d": "FORM 3(D)",
+                "/student/forms/form3l": "FORM 3(L)",
+                "/student/forms/form5e": "FORM 5(E)",
             };
 
             const path = window.location.pathname;

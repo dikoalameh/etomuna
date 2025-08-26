@@ -180,6 +180,26 @@ Route::get('/student/forms/form5e',function () {
     return view('student.forms.form5e');
 });
 
+Route::get('/student/forms/form3a',function () {
+    return view('student.forms.form3a');
+});
+
+Route::get('/student/forms/form3b',function () {
+    return view('student.forms.form3b');
+});
+
+Route::get('/student/forms/form3d',function () {
+    return view('student.forms.form3d');
+});
+
+Route::get('/student/forms/form3c',function () {
+    return view('student.forms.form3c');
+});
+
+Route::get('/student/forms/form3l',function () {
+    return view('student.forms.form3l');
+});
+
 Route::get('/reviewer/forms/form2e',function () {
     return view('reviewer.forms.form2e');
 });

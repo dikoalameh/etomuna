@@ -51,6 +51,38 @@
             responsive: true,
             scrollY: '300px'
         });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkboxes = document.querySelectorAll('.check');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    const group = this.dataset.group;
+
+                    if (this.checked) {
+                        // Uncheck all other checkboxes in the same group
+                        checkboxes.forEach(cb => {
+                            if (cb !== this && cb.dataset.group === group) {
+                                cb.checked = false;
+                                // Disable textboxes
+                                const siblingTextbox = cb.closest('label').querySelector('#textBox');
+                                if (siblingTextbox) siblingTextbox.disabled = true;
+                            }
+                        });
+                    }
+
+                    // Enable/disable textbox
+                    const thisTextbox = this.closest('label').querySelector('#textBox');
+                    if (thisTextbox) thisTextbox.disabled = !this.checked;
+                });
+            });
+
+            // Initialize all textboxes on page load
+            checkboxes.forEach(cb => {
+                const textbox = cb.closest('label').querySelector('#textBox');
+                if (textbox) textbox.disabled = !cb.checked;
+            });
+        });
         
         function toggleSidebar() {
             const sidebar = document.getElementById('sidebar');
@@ -65,7 +97,10 @@
         const titles = {
             "/reviewer/dashboard": "DASHBOARD",
             "/reviewer/protocol-assign": "PROTOCOL ASSIGN",
-            "/reviewer/settings": "SETTINGS"
+            "/reviewer/settings": "SETTINGS",
+            "/reviewer/forms/form2e": "FORM 2(E)",
+            "/reviewer/forms/form2j": "FORM 2(J)",
+            "/reviewer/forms/form3e": "FORM 3(E)"
         };
 
         const path = window.location.pathname;
