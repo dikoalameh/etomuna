@@ -24,7 +24,7 @@
             </div>
             
             <!-- Log in/register/forgot password form layout -->
-            <div class="w-full max-w-[450px] mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden sm:rounded-lg">
+            <div class="w-full max-w-[450px] mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden max-sm:max-h-[70vh] max-sm:overflow-y-auto max-sm:relative sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>

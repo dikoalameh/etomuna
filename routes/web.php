@@ -160,10 +160,6 @@ Route::get('/student/forms/form2a', function () {
     return view('student.forms.form2a');
 });
 
-Route::get('/student/forms/sampleform', function () {
-    return view('student.forms.sampleform');
-});
-
 Route::get('/student/forms/form2b', function () {
     return view('student.forms.form2b');
 });
