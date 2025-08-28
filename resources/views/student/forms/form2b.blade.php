@@ -67,7 +67,7 @@
                     <div class="grid 2xl:grid-cols-3 max-md:grid-cols-1 md:grid-cols-2 max-lg:grid-cols-2 gap-y-3">
                         <!-- UNDERGRADUATE STUDENTS -->
                         <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                            <input type="checkbox" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
+                            <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
                                 name="investigator_type" value="Undergraduate" data-group="1">
                             <span>5.1. MCU Undergraduate Student(s)</span>
                         </label>

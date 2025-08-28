@@ -188,6 +188,10 @@ Route::get('/student/forms/form3d',function () {
     return view('student.forms.form3d');
 });
 
+Route::get('/student/forms/form3e', function(){
+    return view('student.forms.form3e');
+});
+
 Route::get('/student/forms/form3c',function () {
     return view('student.forms.form3c');
 });
