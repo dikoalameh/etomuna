@@ -16,7 +16,7 @@
     </head>
     <body class="text-gray-900 antialiased">
         <!-- body layout -->
-        <div class="min-h-screen flex sm:flex flex-col justify-center items-center sm:justify-center sm:items-center pt-6 sm:pt-0 max-sm:m-2 max-sm:mt-auto">
+        <div class="min-h-screen flex sm:flex flex-col justify-center items-center sm:justify-center sm:items-center pt-6 sm:pt-0 max-sm:mx-2 max-sm:mt-auto">
             <div>
                 <!-- DTO UNG LOGO KAYA HNDI NAKA CENTERALIZED BY Y-AXIS -->
                 <a href="/">
