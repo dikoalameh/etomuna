@@ -18,13 +18,14 @@
         <!-- body layout -->
         <div class="min-h-screen flex sm:flex flex-col justify-center items-center sm:justify-center sm:items-center pt-6 sm:pt-0 max-sm:m-2 max-sm:mt-auto">
             <div>
+                <!-- DTO UNG LOGO KAYA HNDI NAKA CENTERALIZED BY Y-AXIS -->
                 <a href="/">
                     <x-application-logo class="w-20 h-20 text-gray-500" />
                 </a>
             </div>
             
             <!-- Log in/register/forgot password form layout -->
-            <div class="w-full max-w-[450px] mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden max-sm:max-h-[70vh] max-sm:overflow-y-auto max-sm:relative sm:rounded-lg">
+            <div class="w-full max-w-[450px] mt-6 px-6 py-4 shadow-lg border-4 border-gray text-black overflow-hidden max-sm:max-h-[80vh] max-sm:overflow-y-auto max-sm:relative max-sm:rounded-lg">
                 {{ $slot }}
             </div>
         </div>
