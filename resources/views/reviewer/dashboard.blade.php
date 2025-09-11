@@ -9,19 +9,19 @@
         <div class="p-6 max-md:p-0 space-y-10">
             <div class="rounded-md shadow-md overflow-hidden bg-white">
                 <!-- Header bar -->
-                <div class="bg-primary text-white font-semibold px-4 py-2">
+                <div class="bg-primary max-sm:text-sm text-white font-semibold px-4 py-2">
                     Reminder
                 </div>
 
                 <!-- Body -->
                 <div class="p-6 text-sm leading-relaxed">
-                    <p class="mb-4">
+                    <p class="mb-4 max-sm:text-xs">
                         sample text
                     </p>
                 </div>
             </div>
             <div>
-                <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-[25px] max-md:text-[22px] font-semibold">5</h3>
                         <p class="max-md:text-[13px]">APPROVAL OF ACCOUNTS</p>
@@ -44,10 +44,8 @@
                     </div>
                     <div class="w-full mx-auto px-4 max-md:px-0 py-2 max-md:py-0">
                         <div class="bg-white shadow-sm border-2 border-gray">
-
                             <!-- Scroll area -->
                             <ul class="h-[32rem] overflow-y-auto scrollbar divide-y divide-gray">
-
                                 <!-- Notification item -->
                                 <li class="p-4 flex gap-4 hover:bg-gray duration-200">
                                     <div

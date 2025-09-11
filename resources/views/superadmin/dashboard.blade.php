@@ -7,25 +7,25 @@
         </h2>
         <br>
         <div class="p-6 max-md:p-0 space-y-10">
-            <!-- Users Account -->
+            <!-- User Account Cards -->
             <div>
-                <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4 text-gray-700">USERS ACCOUNT</h2>
-                <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">USERS ACCOUNT</h2>
+                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
-                        <p class="max-md:text-[12px]">TOTAL USERS</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
+                        <p class="max-md:text-sm">TOTAL USERS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
-                        <p class="max-md:text-[12px]">PENDING</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
+                        <p class="max-md:text-sm">PENDING</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">7</h3>
-                        <p class="max-md:text-[12px]">APPROVED</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">7</h3>
+                        <p class="max-md:text-sm">APPROVED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">3</h3>
-                        <p class="max-md:text-[12px]">DISABLED</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">3</h3>
+                        <p class="max-md:text-sm">DISABLED</p>
                     </div>
                 </div>
             </div>
@@ -33,44 +33,42 @@
             <!-- Research Protocol -->
             <div>
                 <h2 class="text-[20px] max-sm:text-[17px] font-semibold mb-4">RESEARCH PROTOCOL</h2>
-                <div class="grid max-md:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
-                        <p class="max-md:text-[12px]">EVALUATED</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">5</h3>
+                        <p class="max-md:text-sm">EVALUATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
-                        <p class="max-md:text-[12px]">PENDING REVIEWS</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">10</h3>
+                        <p class="max-md:text-sm">PENDING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">12</h3>
-                        <p class="max-md:text-[12px]">ONGOING REVIEWS</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
+                        <p class="max-md:text-sm">ONGOING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">5</h3>
-                        <p class="max-md:text-[12px]">TERMINATED</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">5</h3>
+                        <p class="max-md:text-sm">TERMINATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
-                        <h3 class="text-[24px] max-md:text-[22px] max-sm:text-[20px] font-semibold">10</h3>
-                        <p class="max-md:text-[12px]">APPROVED</p>
+                        <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">10</h3>
+                        <p class="max-md:text-sm">APPROVED</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="p-6 max-md:px-0 space-y-10">
             <div class="flex max-md:block gap-10 w-full">
-                <!-- Notification Tab -->
+                <!-- Main content -->
                 <main class="flex-1">
                     <div class="max-w-5xl mx-auto max-md:px-1 px-4 py-4 flex items-center justify-between">
-                        <h1 class="text-2xl max-md:text-[20px] font-semibold text-gray-800">Notifications</h1>
+                        <h1 class="text-2xl max-md:text-xl max-sm:text-lg font-semibold text-gray-800">Notifications</h1>
                         <button class="text-sm max-md:text-xs text-blue hover:text-darkblue duration-200">Mark all as read</button>
                     </div>
                     <div class="max-w-5xl mx-auto max-md:px-0 px-4 py-6 max-md:py-2">
                         <div class="bg-white shadow-sm border-2 border-gray">
-
                             <!-- Scroll area -->
                             <ul class="h-[32rem] overflow-y-auto scrollbar divide-y divide-gray">
-
                                 <!-- Notification item -->
                                 <li class="p-4 flex gap-4 hover:bg-gray duration-200">
                                     <div
@@ -101,7 +99,6 @@
                 <div class="flex-1 space-y-10 overflow-auto">
                     <table id="myTable"
                         class="min-w-full display overflow-scroll whitespace-no-wrap border-collapse w-full">
-                        <!-- Table header -->
                         <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[16px]/7">
                             <tr class="header-table">
                                 <th class="w-[25.00%]">Research Protocol</th>
@@ -110,7 +107,6 @@
                                 <th class="w-[25.00%]">Status</th>
                             </tr>
                         </thead>
-                        <!-- Table body -->
                         <tbody class="text-[17px]/6 max-lg:text-[15px]/6">
                             <tr>
                                 <td>2025-001</td>
