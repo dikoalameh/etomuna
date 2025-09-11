@@ -3,7 +3,8 @@
     <div id="modalOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center z-50">
         <button id="closeModalBtn" class="absolute top-2 right-2 text-gray hover:text-black text-xl">&times;</button>
         <!-- Modal layout -->
-        <div class="bg-white rounded-md mt-6 max-sm:mx-2 px-6 py-4 border-4 border-gray max-w-lg w-full">
+        <div
+            class="bg-white rounded-md mt-6 max-sm:mx-2 px-6 py-4 border-4 border-gray max-w-lg w-full max-sm:overflow-y-auto max-sm:max-h-[80vh]">
             <h2 class="mb-6 font-semibold text-2xl max-sm:text-[18px]">Assign Reviewer</h2>
             <!-- Form -->
             <form method="POST" action="" id="modalForm">

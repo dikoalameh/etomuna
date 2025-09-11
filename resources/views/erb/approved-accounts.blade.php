@@ -19,28 +19,38 @@
                         <div class="max-sm:mb-2 max-sm:text-sm">endorsement_letter.pdf</div>
                     </div>
                 </div>
-
-                <!-- Upload Files -->
                 <div class="mt-2">
-                    <!-- ComboBox -->
-                    <x-input-label for="category" :value="__('Choose Category')" />
-                    <select id="category" onchange="showCheckboxes()" class="h-[30px] py-0 text-base max-sm:text-sm">
-                        <option value="" selected disabled>--Choose--</option>
-                        <option value="resubmission">Resubmission</option>
-                        <option value="amendments">Amendments</option>
-                        <option value="initial">Initial Review</option>
-                    </select>
-
-                    <br>
-
-                    <!-- Container for checkboxes -->
-                    <div id="checkboxContainer" class="mt-2 grid grid-cols-3 gap-4"></div>
-                    <div>
-                        <button type="submit"
-                            class="py-2 px-6 my-5 max-sm:my-2 max-sm:py-2 max-sm:px-5 max-sm:text-[15px] tracking-widest rounded text-primary bg-secondary hover:bg-primary hover:text-secondary duration-200">
-                            SUBMIT
-                        </button>
+                    <div class="w-full justify-center items-center">
+                        <x-input-label for="forms" :value="__('Assign Forms')" />
+                        <div class="mt-2 grid grid-cols-3 gap-4">
+                            <label class="flex items-center space-x-2 max-sm:text-sm">
+                                <input type="checkbox" class="h-4 w-4">
+                                <span>Form 2(A)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 max-sm:text-sm">
+                                <input type="checkbox" class="h-4 w-4">
+                                <span>Form 2(B)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 max-sm:text-sm">
+                                <input type="checkbox" class="h-4 w-4">
+                                <span>Form 2(C)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 max-sm:text-sm">
+                                <input type="checkbox" class="h-4 w-4">
+                                <span>Form 2(D)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 max-sm:text-sm">
+                                <input type="checkbox" class="h-4 w-4">
+                                <span>Form 5(E)</span>
+                            </label>
+                        </div>
                     </div>
+                </div>
+                <div>
+                    <button type="submit"
+                        class="py-2 px-6 my-5 max-sm:my-2 max-sm:py-2 max-sm:px-5 max-sm:text-[15px] tracking-widest rounded text-primary bg-secondary hover:bg-primary hover:text-secondary duration-200">
+                        SUBMIT
+                    </button>
                 </div>
             </form>
         </div>

@@ -1,6 +1,6 @@
 @props(['disabled' => false])
 
-<select @disabled($disabled) {{ $attributes->merge(['class' => 'rounded-md border-gray-300']) }}>
+<select @disabled($disabled) {{ $attributes->merge(['class' => 'rounded-md']) }}>
     <option value="" disabled selected>-- Choose Program --</option>
     <option value="CAS - BS Information Technology">CAS - BS Information Technology</option>
     <option value="CAS - BS Computer Science">CAS - BS Computer Science</option>
