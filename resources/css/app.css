@@ -1,37 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-table td, table th {
-    text-align: left !important;
-    position: relative;
+
+/* Remove pointer cursor from the entire cell */
+td.dtr-control {
+    cursor: default !important;
 }
 
-@media (max-width: 380px){
-    label {
-        font-size: 14px;
-    }
-
-    .dt-input {
-        height: 27px;
-    }
-
-    .dt-info {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 500px){
-    label {
-        font-size: 14px;
-    }
-
-    .dt-input {
-        height: 27px;
-    }
-
-    .dt-info {
-        font-size: 14px;
-    }
+/* Keep pointer only on the triangle icon (pseudo-element) */
+td.dtr-control::before {
+    cursor: pointer;
 }
 
 :root {

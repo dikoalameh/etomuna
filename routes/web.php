@@ -22,6 +22,10 @@ Route::get('/reset-password', function () {
     return view('auth.reset-password');
 })->name('password.reset');
 
+Route::get('/register-co-inv', function () {
+    return view('auth.register-co-inv');
+});
+
 // erb
 Route::get('/erb/research-records', function () {
     return view('erb.research-records');

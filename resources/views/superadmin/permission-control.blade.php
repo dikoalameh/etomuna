@@ -128,7 +128,8 @@
                     <tr>
                         <td>{{ $admin->adminID }}</td>
                         <td>{{ $admin->adminFname }} {{ $admin->adminMI ? $admin->adminMI . '.' : '' }}
-                            {{ $admin->adminLname }}</td>
+                            {{ $admin->adminLname }}
+                        </td>
                         <td>{{ $admin->adminEmail }}</td>
                         <td>{{ $admin->adminAccess }}</td>
                         <td>{{ $admin->created_at->format('n/j/Y') }}</td>

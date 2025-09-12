@@ -4,4 +4,5 @@
     <option value="" disabled selected>-- Choose one --</option>
     <option value="erb">ERB</option>
     <option value="iacuc">IACUC</option>
+    <option value="erbiacuc">ERB/IACUC</option>
 </select>

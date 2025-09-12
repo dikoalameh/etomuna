@@ -1,6 +1,6 @@
 <nav class="shadow-md bg-primary max-2xl:hidden h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
     <div class="px-3 py-2 h-20 flex justify-between items-center">
-        <img src="" alt="LOGO">
+        <img src="" alt="ERB MAS BAGO">
     </div>
 
     <ul class="mt-12 flex-1 text-[18px]">
@@ -51,7 +51,7 @@
                 {{ Request::is('erb/pending-accounts') ? 'text-secondary' : '' }}">
                 <i class="bi bi-person-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
-                    Pending Accounts
+                    IRO Approved Accounts
                 </span>
             </a>
         </li>
@@ -101,7 +101,7 @@
                 <img src="" alt="" class="h-[45px] w-[45px] object-cover rounded-[50%] mr-[10px] border-2 border-white">
                 <div class="">
                     <div class="text-[16px] whitespace-nowrap">Iyong Pangalan</div>
-                    <div class="text-[14px] whitespace-nowrap">Admin</div>
+                    <div class="text-[14px] whitespace-nowrap">ERB Admin</div>
                 </div>
             </div>
             <a href="{{ url('/') }}" class="duration-200 hover:text-secondary">
@@ -164,7 +164,7 @@
                 {{ Request::is('erb/pending-accounts') ? 'text-secondary' : '' }}">
                     <i class="bi bi-person-fill"></i>
                     <span class="w-full flex justify-between items-center px-3">
-                        Pending Accounts
+                        IRO Approved Accounts
                     </span>
                 </a>
             </li>
@@ -215,7 +215,7 @@
                         class="h-[45px] w-[45px] object-cover rounded-[50%] mr-[10px] border-2 border-white">
                     <div class="">
                         <div class="text-[16px] whitespace-nowrap">Iyong Pangalan</div>
-                        <div class="text-[14px] whitespace-nowrap">Admin</div>
+                        <div class="text-[14px] whitespace-nowrap">ERB Admin</div>
                     </div>
                 </div>
                 <a href="{{ url('/') }}" class="duration-200 hover:text-secondary">

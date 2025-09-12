@@ -15,6 +15,9 @@
                         <div class="max-sm:mb-2 max-sm:text-sm">John Doe</div>
 
                         <div class="font-semibold max-sm:text-sm">Co-Investigators:</div>
+                        <div class="max-sm:mb-2 max-sm:text-sm">John Doe, Alfreds Futterkiste</div>
+                            
+                        <div class="font-semibold max-sm:text-sm">Research Title:</div>
                         <div class="max-sm:mb-2 max-sm:text-sm">Brain Injury: Prevention and Treatment of Chronic Brain
                             Injury</div>
 
@@ -65,15 +68,6 @@
                             class="openModalBtn border-2 px-[10px] py-[5px] hover:bg-gray">View</button>
                     </td>
                     <td>7/2/2025<br>13:12:30</td>
-                </tr>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Brain Injury: Prevention and Treatment of Chronic Brain Injury</td>
-                    <td>
-                        <!-- Combo box for classifying accounts -->
-                        <x-combobox-classify-accounts id="reviewClassification" name="reviewClassification" />
-                    </td>
-                    <td>6/30/2025<br>15:09:23</td>
                 </tr>
             </tbody>
         </table>
