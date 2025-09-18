@@ -1,4 +1,4 @@
-<nav class="shadow-md bg-primary max-2xl:hidden h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
+<nav class="shadow-md bg-primary max-sm:hidden sm:hidden max-xl:hidden xl:block h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
     <div class="px-3 py-2 h-20 flex justify-between items-center">
         <img src="" alt="IRO MAS BAGO">
     </div>
@@ -113,7 +113,7 @@
 
 <!-- Mobile Sidebar -->
 <div id="sidebar"
-    class="fixed top-0 left-0 h-full w-80 bg-primary 2xl:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
+    class="fixed top-0 left-0 h-full w-80 bg-primary xl:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
     <nav class="flex flex-col p-2">
         <ul class="text-white max-2xl:mt-[65px] max-sm:mt-[55px]">
             <!-- Dashboard -->
@@ -229,7 +229,7 @@
 <div id="overlay" class="fixed inset-0 hidden z-40" onclick="toggleSidebar()"></div>
 <!-- Header -->
 <header
-    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center 2xl:hidden">
+    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center xl:hidden">
     <button onclick="toggleSidebar()" class="text-white focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
             stroke-linecap="round" stroke-linejoin="round">

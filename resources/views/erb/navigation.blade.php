@@ -1,4 +1,5 @@
-<nav class="shadow-md bg-primary max-2xl:hidden h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
+<nav
+    class="shadow-md bg-primary max-sm:hidden sm:hidden max-xl:hidden xl:block h-screen w-[335px] p-2 flex flex-col text-white fixed top-0 left-0">
     <div class="px-3 py-2 h-20 flex justify-between items-center">
         <img src="" alt="ERB MAS BAGO">
     </div>
@@ -14,7 +15,9 @@
         </li>
         <!-- Dropdown -->
         <li class="px-3 py-4">
-            <button class="dropdownToggle w-full flex justify-between items-center hover:text-secondary transition-all">
+            <button
+                class="dropdownToggle w-full flex justify-between items-center hover:text-secondary transition-all 
+                    {{ Request::is('erb/reviewers-checklist') ? 'text-secondary' : '' }} {{ Request::is('erb/assign-reviewer') ? 'text-secondary' : '' }}">
                 <i class="bi bi-file-earmark-fill"></i>
                 <span class="mr-auto px-3">View Documents</span>
                 <svg class="dropdownArrow w-4 h-4 transition-transform" fill="none" stroke="currentColor"
@@ -47,8 +50,8 @@
         </li>
         <!-- Pending Accounts -->
         <li>
-            <a href="{{ url('/erb/pending-accounts') }}" class="flex items-center justify-between px-3 py-4 transition-all flex duration-200 hover:text-secondary
-                {{ Request::is('erb/pending-accounts') ? 'text-secondary' : '' }}">
+            <a href="{{ url('/erb/iro-approved-accounts') }}" class="flex items-center justify-between px-3 py-4 transition-all flex duration-200 hover:text-secondary
+                {{ Request::is('erb/iro-approved-accounts') ? 'text-secondary' : '' }}">
                 <i class="bi bi-person-fill"></i>
                 <span class="w-full flex justify-between items-center px-3">
                     IRO Approved Accounts
@@ -113,7 +116,7 @@
 
 <!-- Mobile Sidebar -->
 <div id="sidebar"
-    class="fixed top-0 left-0 h-full w-80 bg-primary 2xl:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
+    class="fixed top-0 left-0 h-full w-80 bg-primary xl:hidden shadow transform -translate-x-full transition-transform duration-300 z-50">
     <nav class="flex flex-col p-2">
         <ul class="text-white max-2xl:mt-[65px] max-sm:mt-[55px]">
             <!-- Dashboard -->
@@ -127,7 +130,8 @@
             <!-- Dropdown -->
             <li class="px-3 py-4">
                 <button
-                    class="dropdownToggle w-full flex justify-between items-center hover:text-secondary transition-all">
+                    class="dropdownToggle w-full flex justify-between items-center hover:text-secondary transition-all 
+                    {{ Request::is('erb/reviewers-checklist') ? 'text-secondary' : '' }} {{ Request::is('erb/assign-reviewer') ? 'text-secondary' : '' }}">
                     <i class="bi bi-file-earmark-fill"></i>
                     <span class="mr-auto px-3">View Documents</span>
                     <svg class="dropdownArrow w-4 h-4 transition-transform" fill="none" stroke="currentColor"
@@ -160,8 +164,8 @@
             </li>
             <!-- Pending Accounts -->
             <li>
-                <a href="{{ url('/erb/pending-accounts') }}" class="flex items-center justify-between px-3 py-4 transition-all flex duration-200 hover:text-secondary
-                {{ Request::is('erb/pending-accounts') ? 'text-secondary' : '' }}">
+                <a href="{{ url('/erb/iro-approved-accounts') }}" class="flex items-center justify-between px-3 py-4 transition-all flex duration-200 hover:text-secondary
+                {{ Request::is('erb/iro-approved-accounts') ? 'text-secondary' : '' }}">
                     <i class="bi bi-person-fill"></i>
                     <span class="w-full flex justify-between items-center px-3">
                         IRO Approved Accounts
@@ -229,7 +233,7 @@
 <div id="overlay" class="fixed inset-0 hidden z-40" onclick="toggleSidebar()"></div>
 <!-- Header -->
 <header
-    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center 2xl:hidden">
+    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center xl:hidden">
     <button onclick="toggleSidebar()" class="text-white focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
             stroke-linecap="round" stroke-linejoin="round">

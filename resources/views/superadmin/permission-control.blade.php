@@ -1,8 +1,8 @@
 @section('title', 'Permission Control')
 <x-superadmin-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-2xl:ml-auto p-4">
-        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="xl:ml-[335px] max-xl:ml-auto p-4">
+        <h2 class="max-xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             PERMISSION CONTROL
         </h2>
         <br>
@@ -111,19 +111,19 @@
             </script>
         @endif
 
-        <table id="myTable" class="min-w-full display overflow-scroll whitespace-no-wrap border-collapse w-full">
+        <table id="myTable" class="table-fixed min-w-full display overflow-scroll whitespace-normal border-collapse w-full">
             <!-- Table header -->
-            <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[16px]">
+            <thead class="bg-primary text-white text-[18px]/7 max-lg:text-[16px]/7">
                 <tr class="header-table">
-                    <th class="w-[20.00%]">Account Name</th>
-                    <th class="w-[20.00%]">Username</th>
-                    <th class="w-[20.00%]">Access</th>
-                    <th class="w-[20.00%]">Role</th>
-                    <th class="w-[20.00%]">Date Modified</th>
+                    <th>Account Name</th>
+                    <th>Username</th>
+                    <th>Access</th>
+                    <th>Role</th>
+                    <th>Date Modified</th>
                 </tr>
             </thead>
             <!-- Table body -->
-            <tbody class="text-[17px]/6 max-lg:text-[15px]">
+            <tbody class="text-base/6 max-lg:text-sm/6">
                 @foreach($admins as $admin)
                     <tr>
                         <td>{{ $admin->adminID }}</td>

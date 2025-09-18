@@ -1,8 +1,8 @@
 @section('title', 'Form 2(B)')
 <x-student-layout>
-    <main class="ml-[335px] max-2xl:ml-auto p-4">
+    <main class="ml-[335px] max-xl:ml-auto p-4">
         <form action="" method="POST" class="block">
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <p class="text-right mt-3 mr-3 max-lg:text-sm max-md:text-sm max-sm:text-xs">FORM 2(B)</p>
                 <h1
                     class="text-center mt-10 max-2xl:mt-6 max-lg:mt-6 max-md:mt-6 font-bold text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm mb-2 underline">
@@ -11,7 +11,7 @@
             </div>
 
             <!-- APPLICATION INFORMATION -->
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">SECTION I: APPLICATION
                     INFORMATION</h2>
                 <h2 class="p-3 font-semibold text-lg max-2xl:text-base max-sm:text-sm">TO BE FILLED UP BY P.I.</h2>
@@ -73,25 +73,25 @@
                         </label>
                         <!-- GRADUATE STUDENTS -->
                         <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                            <input type="checkbox" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
+                            <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
                                 name="investigator_type" value="Graduate" data-group="1">
                             <span>5.2. MCU Graduate Student (MA, MS, PhD, Medical Student)</span>
                         </label>
                         <!-- FACULTIES -->
                         <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                            <input type="checkbox" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
+                            <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
                                 name="investigator_type" value="Faculty" data-group="1">
                             <span>5.3. MCU Faculty</span>
                         </label>
                         <!-- NON-TEACHING STAFF -->
                         <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                            <input type="checkbox" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
+                            <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
                                 name="investigator_type" value="Non-Teaching Staff" data-group="1">
                             <span>5.4. MCU Non-Teaching Staff</span>
                         </label>
                         <!-- ADMINISTRATIVE STAFF -->
                         <label class="flex items-start space-x-2 max-sm:text-sm/6">
-                            <input type="checkbox" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
+                            <input type="radio" class="check mt-1 max-sm:w-[14px] max-sm:h-[14px]"
                                 name="investigator_type" value="Administrative Staff" data-group="1">
                             <span>5.5. MCU Administrative Staff</span>
                         </label>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <!-- SECTION II: PROTOCOL INFORMATION -->
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">SECTION II: PROTOCOL
                     INFORMATION</h2>
                 <h2 class="p-3 font-semibold text-lg max-2xl:text-base max-sm:text-sm">TYPE OF STUDY</h2>
@@ -296,7 +296,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">SECTION III: ETHICAL
                     CONSIDERATIONS</h2>
                 <div class="p-3">
@@ -488,7 +488,7 @@
             </div>
 
             <!-- BUTTONS -->
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <div class="p-3 flex items-center justify-center space-x-2">
                     <button type="button"
                         class="bg-primary text-secondary hover:bg-secondary hover:text-primary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm">SAVE</button>

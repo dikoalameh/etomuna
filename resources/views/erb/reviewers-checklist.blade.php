@@ -1,8 +1,8 @@
 @section('title', 'Reviewers Checklists')
 <x-erb-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-2xl:ml-auto p-4">
-        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="xl:ml-[335px] max-xl:ml-auto p-4">
+        <h2 class="max-xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             REVIEWERS CHECKLIST
         </h2>
         <br>

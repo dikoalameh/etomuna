@@ -104,13 +104,13 @@
         // Set Page Title Based on URL Path
         const titles = {
             "/iacuc/dashboard": "DASHBOARD",
-            "/iacuc/reviewers-checklist": "REVIEWERS CHECKLIST",
             "/iacuc/assign-reviewer": "ASSIGN REVIEWER",
-            "/iacuc/pending-accounts": "PENDING ACCOUNTS",
-            "/iacuc/research-records": "RESEARCH RECORDS",
             "/iacuc/approved-accounts": "APPROVED ACCOUNTS",
+            "/iacuc/iro-approved-accounts": "APPROVED ACCOUNTS",
             "/iacuc/pending-reviews": "PENDING REVIEWS",
-            "/iacuc/settings": "SETTINGS"
+            "/iacuc/research-records": "RESEARCH RECORDS",
+            "/iacuc/reviewers-checklist": "REVIEWERS CHECKLIST",
+            "/iacuc/settings": "SETTINGS",
         };
 
         const path = window.location.pathname;

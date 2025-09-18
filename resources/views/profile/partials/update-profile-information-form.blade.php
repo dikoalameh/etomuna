@@ -19,14 +19,14 @@
 
         <div>
             <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" autofocus
+            <x-text-input id="name" name="name" type="text" class="mt-1 text-sm block w-full" autofocus
                 autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
         <div>
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" 
+            <x-text-input id="email" name="email" type="email" class="mt-1 text-sm block w-full" 
                 autocomplete="username" />
             <x-input-error class="mt-2" :messages="$errors->get('email')" />
 

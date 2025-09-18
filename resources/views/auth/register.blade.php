@@ -113,6 +113,7 @@
                 comboBox.classList.add('hidden');
                 departmentWrapper.style.display = "none";
                 textBox.classList.remove('hidden');
+                textBox.value = "";
                 textBox.disabled = false;
 
                 // Update the x-input-label's text

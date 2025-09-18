@@ -2,13 +2,13 @@
 <x-student-layout>
     <main class="ml-[335px] max-2xl:ml-auto p-4">
         <form action="" method="POST" class="block">
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <p class="text-right mt-3 mr-3 max-lg:text-sm max-md:text-sm max-sm:text-xs">FORM 3(B)</p>
                 <h1
                     class="text-center mt-10 max-2xl:mt-6 max-lg:mt-6 max-md:mt-6 font-bold text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm mb-2 underline">
                     REVIEW OF RESUBMITTED STUDY PROTOCOL FORM</h1>
             </div>
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">STUDY PROTOCOL INFORMATION</h2>
                 <div class="p-3 mt-2 space-y-2 text-base max-sm:text-sm">
                     <div class="grid grid-cols-[max-content_1fr] max-sm:grid-cols-1 gap-x-20 gap-y-3 max-w-full">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">TO BE FILLED UP BY P.I.</h2>
                 <div class="p-3 mt-2 space-y-2 text-base max-sm:text-sm">
                     <div>

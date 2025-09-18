@@ -1,8 +1,8 @@
 @section('title', 'Dashboard')
 <x-student-layout>
     <!-- Main Content -->
-    <main class="ml-[335px] max-2xl:ml-auto p-4">
-        <h2 class="max-2xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
+    <main class="xl:ml-[335px] max-xl:ml-auto p-4">
+        <h2 class="max-xl:hidden text-left bg-[#f2f2f2] shadow-lg p-[35px] rounded-[30px] font-medium text-[28px]">
             DASHBOARD
         </h2>
         <br>
@@ -24,7 +24,7 @@
 
             <!-- Cards -->
             <div>
-                <div class="grid 2xl:grid-cols-4 max-md:grid-cols-1 md:grid-cols-2 max-lg:grid-cols-2 gap-4">
+                <div class="grid 2xl:grid-cols-2 max-md:grid-cols-1 md:grid-cols-2 max-lg:grid-cols-2 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h2 class="text-[25px] max-2xl:text-[22px] max-sm:text-[14px] font-semibold max-sm:font-semibold text-center">UNDER
                             REVIEW</h2>

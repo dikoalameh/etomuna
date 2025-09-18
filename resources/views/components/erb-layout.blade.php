@@ -106,12 +106,11 @@
             "/erb/dashboard": "DASHBOARD",
             "/erb/assign-reviewer": "ASSIGN REVIEWER",
             "/erb/approved-accounts": "APPROVED ACCOUNTS",
-            "/erb/pending-accounts": "PENDING ACCOUNTS",
+            "/erb/iro-approved-accounts": "APPROVED ACCOUNTS",
             "/erb/pending-reviews": "PENDING REVIEWS",
             "/erb/research-records": "RESEARCH RECORDS",
             "/erb/reviewers-checklist": "REVIEWERS CHECKLIST",
             "/erb/settings": "SETTINGS",
-            "/erb/sample-table": "SAMPLE TABLE"
         };
 
         const path = window.location.pathname;

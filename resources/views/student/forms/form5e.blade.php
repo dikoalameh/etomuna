@@ -1,15 +1,15 @@
 @section('title', 'Form 5(E)')
 <x-student-layout>
-    <main class="ml-[335px] max-2xl:ml-auto p-4">
+    <main class="ml-[335px] max-xl:ml-auto p-4">
         <form action="" method="POST" class="block">
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <p class="text-right mt-3 mr-3 max-lg:text-sm max-md:text-sm max-sm:text-xs">FORM 5(E)</p>
                 <h1
                     class="text-center mt-10 max-2xl:mt-6 max-lg:mt-6 max-md:mt-6 font-bold text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-sm mb-2 underline">
                     DOCUMENT HISTORY
                 </h1>
             </div>
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <h2 class="px-3 py-2 font-bold text-lg max-2xl:text-base max-sm:text-sm">PART I: INFORMATION</h2>
                 <h2 class="p-3 font-semibold text-lg max-2xl:text-base max-sm:text-sm">TO BE FILLED UP BY P.I.</h2>
                 <div
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <div class="p-3 gap-x-10 gap-y-3">
                     <!-- BASIC DOCUMENTS -->
                     <h2 class="font-bold max-sm:text-sm">Initial Documents</h2>
@@ -202,7 +202,7 @@
             </div>
             
             <!-- BUTTONS -->
-            <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
+            <div class="mt-3 p-1 max-w-full bg-lightgray rounded mx-auto shadow-md">
                 <div class="p-3 flex items-center justify-center space-x-2">
                     <button type="button"
                         class="bg-primary text-secondary hover:bg-secondary hover:text-primary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm">SAVE</button>

@@ -31,8 +31,8 @@ Route::get('/erb/research-records', function () {
     return view('erb.research-records');
 });
 
-Route::get('/erb/pending-accounts', function () {
-    return view('erb.pending-accounts');
+Route::get('/erb/iro-approved-accounts', function () {
+    return view('erb.iro-approved-accounts');
 });
 
 Route::get('/erb/approved-accounts', function () {
@@ -160,6 +160,10 @@ Route::get('/student/settings', function () {
 });
 
 // sample form layout
+Route::get('/student/forms/sampleform', function() {
+    return view('student.forms.sampleform');
+});
+
 Route::get('/student/forms/form2a', function () {
     return view('student.forms.form2a');
 });
