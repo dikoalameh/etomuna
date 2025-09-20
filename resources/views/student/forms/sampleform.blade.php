@@ -66,64 +66,72 @@
             </div>
 
             <!-- Recommendations from last review -->
-            <div class="mt-3 p-4 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
-                <h2 class="font-bold text-lg max-2xl:text-base max-sm:text-sm mb-4">Recommendations from Last Review
+            <div class="mt-3 p-4 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md space-y-4">
+                <h2 class="font-bold text-lg max-2xl:text-base max-sm:text-sm mb-2">Recommendations from Last Review
                 </h2>
-                <p class="mb-4 max-sm:text-sm">
-                    Indicate if the study protocol contains the specified assessment point. Provide page and paragraph
-                    where it is found, whether recommendations were met, and explanation.
+                <p class="mb-2 max-sm:text-sm">
+                    Indicate if the study protocol contains the specified assessment point. Provide your notes below.
                 </p>
 
-                <table class="w-full border border-gray-400 text-sm max-sm:text-xs">
-                    <thead class="bg-gray-200">
-                        <tr>
-                            <th class="border border-gray-400 p-2 text-left">Assessment Point</th>
-                            <th class="border border-gray-400 p-2 text-left">Page and Paragraph</th>
-                            <th class="border border-gray-400 p-2 text-center">Yes</th>
-                            <th class="border border-gray-400 p-2 text-center">N/A</th>
-                            <th class="border border-gray-400 p-2 text-left">Explanation</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @php
-                            $sections = [
-                                '1. Address protocol-related issues' => ['1.1', '1.2'],
-                                '2. Address ethical-related issues' => ['2.1', '2.2'],
-                                '3. Address informed consent-related issues' => ['3.1', '3.2'],
-                                '4. Changes that were not part of the initial review' => ['4.1', '4.2'],
-                            ];
-                        @endphp
+                <!-- 1. Address protocol-related issues -->
+                <div class="space-y-2">
+                    <label class="font-semibold">1. Address protocol-related issues</label>
+                    <div class="pl-4">
+                        <label class="block mb-1">1.1</label>
+                        <input type="text" name="recommendation_1_1" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                    <div class="pl-4">
+                        <label class="block mb-1">1.2</label>
+                        <input type="text" name="recommendation_1_2" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                </div>
 
-                        @foreach ($sections as $sectionTitle => $items)
-                            <tr class="bg-gray-100 font-semibold">
-                                <td colspan="5" class="border border-gray-400 p-2">{{ $sectionTitle }}</td>
-                            </tr>
-                            @foreach ($items as $item)
-                                <tr>
-                                    <td class="border border-gray-400 p-2 pl-4">{{ $item }}</td>
-                                    <td class="border border-gray-400 p-2">
-                                        <input type="text" name="page_paragraph_{{ str_replace('.', '_', $item) }}"
-                                            class="w-full rounded border border-gray-300 p-1"
-                                            placeholder="Page and paragraph" />
-                                    </td>
-                                    <td class="border border-gray-400 p-2 text-center">
-                                        <input type="checkbox" name="yes_{{ str_replace('.', '_', $item) }}" value="yes"
-                                            class="w-4 h-4 mx-auto" />
-                                    </td>
-                                    <td class="border border-gray-400 p-2 text-center">
-                                        <input type="checkbox" name="na_{{ str_replace('.', '_', $item) }}" value="na"
-                                            class="w-4 h-4 mx-auto" />
-                                    </td>
-                                    <td class="border border-gray-400 p-2">
-                                        <textarea name="explanation_{{ str_replace('.', '_', $item) }}" rows="2"
-                                            class="w-full rounded border border-gray-300 p-1 resize-y"
-                                            placeholder="Explanation"></textarea>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        @endforeach
-                    </tbody>
-                </table>
+                <!-- 2. Address ethical-related issues -->
+                <div class="space-y-2">
+                    <label class="font-semibold">2. Address ethical-related issues</label>
+                    <div class="pl-4">
+                        <label class="block mb-1">2.1</label>
+                        <input type="text" name="recommendation_2_1" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                    <div class="pl-4">
+                        <label class="block mb-1">2.2</label>
+                        <input type="text" name="recommendation_2_2" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                </div>
+
+                <!-- 3. Address informed consent-related issues -->
+                <div class="space-y-2">
+                    <label class="font-semibold">3. Address informed consent-related issues</label>
+                    <div class="pl-4">
+                        <label class="block mb-1">3.1</label>
+                        <input type="text" name="recommendation_3_1" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                    <div class="pl-4">
+                        <label class="block mb-1">3.2</label>
+                        <input type="text" name="recommendation_3_2" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                </div>
+
+                <!-- 4. Changes that were not part of the initial review -->
+                <div class="space-y-2">
+                    <label class="font-semibold">4. Changes that were not part of the initial review</label>
+                    <div class="pl-4">
+                        <label class="block mb-1">4.1</label>
+                        <input type="text" name="recommendation_4_1" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                    <div class="pl-4">
+                        <label class="block mb-1">4.2</label>
+                        <input type="text" name="recommendation_4_2" class="w-full rounded border border-gray-300 p-1"
+                            placeholder="Enter details here" />
+                    </div>
+                </div>
             </div>
 
             <!-- PI Signature -->
@@ -138,21 +146,30 @@
             <div class="mt-3 p-4 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md space-y-4">
                 <h2 class="font-bold text-lg max-2xl:text-base max-sm:text-sm">RECOMMENDATION OF PRIMARY REVIEWER</h2>
                 <div class="flex flex-wrap gap-6 max-sm:flex-col max-sm:gap-3">
-                    @php
-                        $recommendations = [
-                            'APPROVE',
-                            'MINOR MODIFICATION',
-                            'MAJOR MODIFICATION',
-                            'DISAPPROVE',
-                            'PENDING, IF MAJOR CLARIFICATIONS ARE REQUIRED BEFORE A DECISION CAN BE MADE',
-                        ];
-                    @endphp
-                    @foreach ($recommendations as $rec)
-                        <label class="flex items-center space-x-2 max-sm:text-sm">
-                            <input type="radio" name="primary_reviewer_recommendation" value="{{ $rec }}" class="w-4 h-4" />
-                            <span>{{ $rec }}</span>
-                        </label>
-                    @endforeach
+                    <label class="flex items-center space-x-2 max-sm:text-sm">
+                        <input type="radio" name="primary_reviewer_recommendation" value="APPROVE" class="w-4 h-4" />
+                        <span>APPROVE</span>
+                    </label>
+                    <label class="flex items-center space-x-2 max-sm:text-sm">
+                        <input type="radio" name="primary_reviewer_recommendation" value="MINOR MODIFICATION"
+                            class="w-4 h-4" />
+                        <span>MINOR MODIFICATION</span>
+                    </label>
+                    <label class="flex items-center space-x-2 max-sm:text-sm">
+                        <input type="radio" name="primary_reviewer_recommendation" value="MAJOR MODIFICATION"
+                            class="w-4 h-4" />
+                        <span>MAJOR MODIFICATION</span>
+                    </label>
+                    <label class="flex items-center space-x-2 max-sm:text-sm">
+                        <input type="radio" name="primary_reviewer_recommendation" value="DISAPPROVE" class="w-4 h-4" />
+                        <span>DISAPPROVE</span>
+                    </label>
+                    <label class="flex items-center space-x-2 max-sm:text-sm">
+                        <input type="radio" name="primary_reviewer_recommendation"
+                            value="PENDING, IF MAJOR CLARIFICATIONS ARE REQUIRED BEFORE A DECISION CAN BE MADE"
+                            class="w-4 h-4" />
+                        <span>PENDING, IF MAJOR CLARIFICATIONS ARE REQUIRED BEFORE A DECISION CAN BE MADE</span>
+                    </label>
                 </div>
 
                 <label class="block font-bold mt-4 max-sm:text-sm" for="justification">JUSTIFICATION FOR RECOMMENDED
@@ -165,35 +182,29 @@
                     RECOMMENDATIONS:</label>
                 <ol id="summary_recommendations" name="summary_recommendations"
                     class="list-decimal list-inside space-y-1 max-sm:text-sm">
-                    @for ($i = 1; $i <= 5; $i++)
-                        <li>
-                            <input type="text" name="summary_recommendation_{{ $i }}"
-                                class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation {{ $i }}" />
-                        </li>
-                    @endfor
+                    <li>
+                        <input type="text" name="summary_recommendation_1"
+                            class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation 1" />
+                    </li>
+                    <li>
+                        <input type="text" name="summary_recommendation_2"
+                            class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation 2" />
+                    </li>
+                    <li>
+                        <input type="text" name="summary_recommendation_3"
+                            class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation 3" />
+                    </li>
+                    <li>
+                        <input type="text" name="summary_recommendation_4"
+                            class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation 4" />
+                    </li>
+                    <li>
+                        <input type="text" name="summary_recommendation_5"
+                            class="w-full rounded border border-gray-300 p-1" placeholder="Recommendation 5" />
+                    </li>
                 </ol>
             </div>
 
-            <!-- ERB Chair Section -->
-            <div class="mt-3 p-4 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md space-y-4 max-sm:text-sm">
-                <h2 class="font-bold text-lg max-2xl:text-base">ERB CHAIR</h2>
-                <div class="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
-                    <div>
-                        <label class="font-semibold block mb-1">Signature</label>
-                        <input type="text" name="erb_chair_signature" class="w-full rounded border border-gray-300 p-2"
-                            placeholder="Signature" />
-                    </div>
-                    <div>
-                        <label class="font-semibold block mb-1">Date</label>
-                        <input type="date" name="erb_chair_date" class="w-full rounded border border-gray-300 p-2" />
-                    </div>
-                    <div class="col-span-2">
-                        <label class="font-semibold block mb-1">Name (Title, Name, Surname)</label>
-                        <input type="text" name="erb_chair_name" class="w-full rounded border border-gray-300 p-2"
-                            placeholder="Name" />
-                    </div>
-                </div>
-            </div>
 
             <!-- Researcher and Adviser Signatures -->
             <div class="mt-3 p-4 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md space-y-4 max-sm:text-sm">
@@ -217,18 +228,16 @@
                 </div>
             </div>
 
-            <!-- Buttons -->
             <div class="mt-3 p-1 max-w-7xl w-full bg-lightgray rounded mx-auto shadow-md">
-                <div
-                    class="p-3 flex items-center justify-center space-x-2 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-2">
-                    <button type="submit" name="action" value="save"
-                        class="bg-primary text-secondary hover:bg-secondary hover:text-primary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm w-full max-w-xs">
-                        SAVE
-                    </button>
-                    <button type="submit" name="action" value="export_pdf"
-                        class="bg-secondary text-primary hover:bg-primary hover:text-secondary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm w-full max-w-xs">
-                        EXPORT TO PDF
-                    </button>
+                <div class="p-3 flex items-center justify-center space-x-2">
+                    <button type="button"
+                        class="bg-primary text-secondary hover:bg-secondary hover:text-primary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm">SAVE</button>
+                    <a href="">
+                        <button type="submit"
+                            class="bg-secondary text-primary hover:bg-primary hover:text-secondary duration-200 tracking-widest p-4 max-sm:p-3 rounded max-sm:text-sm">EXPORT
+                            TO PDF
+                        </button>
+                    </a>
                 </div>
             </div>
         </form>

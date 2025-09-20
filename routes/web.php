@@ -164,6 +164,19 @@ Route::get('/student/forms/sampleform', function() {
     return view('student.forms.sampleform');
 });
 
+Route::get('/student/forms/sampleform2', function() {
+    return view('student.forms.sampleform2');
+});
+
+Route::get('/student/forms/sampleform3', function() {
+    return view('student.forms.sampleform3');
+});
+
+Route::get('/student/forms/sampleform4', function() {
+    return view('student.forms.sampleform4');
+});
+
+
 Route::get('/student/forms/form2a', function () {
     return view('student.forms.form2a');
 });
@@ -218,6 +231,10 @@ Route::get('/reviewer/forms/form2j',function () {
 
 Route::get('/reviewer/forms/form3e',function () {
     return view('reviewer.forms.form3e');
+});
+
+Route::get('/reviewer/forms/form3b',function () {
+    return view('reviewer.forms.form3b');
 });
 
 //Storing Data through superadmin's permission-control

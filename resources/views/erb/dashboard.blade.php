@@ -27,19 +27,19 @@
                 <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
-                        <p class="max-md:text-sm">TOTAL USERS</p>
+                        <p class="max-xl:text-sm">TOTAL USERS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
-                        <p class="max-md:text-sm">PENDING</p>
+                        <p class="max-xl:text-sm">PENDING</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">7</h3>
-                        <p class="max-md:text-sm">APPROVED</p>
+                        <p class="max-xl:text-sm">APPROVED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">3</h3>
-                        <p class="max-md:text-sm">DISABLED</p>
+                        <p class="max-xl:text-sm">DISABLED</p>
                     </div>
                 </div>
             </div>
@@ -50,23 +50,23 @@
                 <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">5</h3>
-                        <p class="max-md:text-sm">EVALUATED</p>
+                        <p class="max-xl:text-sm">EVALUATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">10</h3>
-                        <p class="max-md:text-sm">PENDING REVIEWS</p>
+                        <p class="max-xl:text-sm">PENDING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">12</h3>
-                        <p class="max-md:text-sm">ONGOING REVIEWS</p>
+                        <p class="max-xl:text-sm">ONGOING REVIEWS</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">5</h3>
-                        <p class="max-md:text-sm">TERMINATED</p>
+                        <p class="max-xl:text-sm">TERMINATED</p>
                     </div>
                     <div class="card bg-lightgray p-4 rounded-lg border border-gray shadow">
                         <h3 class="text-2xl max-md:text-[22px] max-sm:text-xl font-semibold">10</h3>
-                        <p class="max-md:text-sm">APPROVED</p>
+                        <p class="max-xl:text-sm">APPROVED</p>
                     </div>
                 </div>
             </div>

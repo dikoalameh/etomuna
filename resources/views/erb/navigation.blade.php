@@ -233,7 +233,7 @@
 <div id="overlay" class="fixed inset-0 hidden z-40" onclick="toggleSidebar()"></div>
 <!-- Header -->
 <header
-    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center xl:hidden">
+    class="sticky top-0 z-50 p-4 bg-primary text-white border-b border-white shadow flex justify-between items-center 2xl:hidden">
     <button onclick="toggleSidebar()" class="text-white focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
             stroke-linecap="round" stroke-linejoin="round">
